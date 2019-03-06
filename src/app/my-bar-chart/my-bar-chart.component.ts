@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class MyBarChartComponent implements OnInit {
   public barChartOptions = {
     scaleShowVerticalLines: false,
-    responsive: true
+    responsive: true,
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }],
+    }
   };
 
   public barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
