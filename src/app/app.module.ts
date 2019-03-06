@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,9 @@ import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    NgxChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

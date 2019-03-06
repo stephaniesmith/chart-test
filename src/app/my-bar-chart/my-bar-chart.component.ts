@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { single, multi } from './data';
 
 @Component({
   selector: 'app-my-bar-chart',
@@ -23,9 +24,35 @@ export class MyBarChartComponent implements OnInit {
     { data: [32, 19, 63, 74, 48, 22, 64], label: 'Series B' },
   ];
 
-  constructor() { }
+
+  single: any[];
+  multi: any[];
+
+  view: any[] = [700, 400];
+
+  showXAxis = true;
+  showYAxis = true;
+  gradient = false;
+  showLegend = true;
+  showXAxisLegend = true;
+  xAxisLegend = 'Country';
+  showYAxisLegend = true;
+  yAxisLegend = 'Population';
+
+  colorScheme = {
+    domain: ['#5AA454', '#A10A2B', '#C7B42C', '#AAAAAA']
+  };
+
+  constructor() {
+    Object.assign(this, { single });
+    Object.assign(this, { multi });
+  }
 
   ngOnInit() {
+  }
+
+  onSelect(event) {
+    console.log(event);
   }
 
 }
