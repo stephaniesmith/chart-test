@@ -24,6 +24,15 @@ export class MyBarChartComponent implements OnInit {
     { data: [32, 19, 63, 74, 48, 22, 64], label: 'Series B' },
   ];
 
+  private colors = [
+    {
+      backgroundColor: 'rgba(255, 0, 0, 0.4)'
+    },
+    {
+      backgroundColor: 'rgba(0, 255, 0, 0.4)'
+    }
+  ];
+
 
   single: any[];
   multi: any[];
