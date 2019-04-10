@@ -4,12 +4,14 @@ import { MyBarChartComponent } from './my-bar-chart/my-bar-chart.component';
 import { MyDoughntChartComponent } from './my-doughnt-chart/my-doughnt-chart.component';
 import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component';
 import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 const routes: Routes = [
   { path: 'bar-chart', component: MyBarChartComponent },
   { path: 'doughnut-chart', component: MyDoughntChartComponent },
   { path: 'radar-chart', component: MyRadarChartComponent },
   { path: 'pie-chart', component: MyPieChartComponent },
+  { path: 'bar-chart-test', component: BarChartComponent },
   { path: '**', component: MyBarChartComponent }
 ];
 
